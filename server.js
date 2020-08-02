@@ -1,4 +1,8 @@
-require('dotenv').config()
+if(process.env.NODE_ENV !== 'production'){
+    require('dotenv').config()
+}
+
+
 // basic express setup
 const express = require('express');
 const app = express();
