@@ -1,0 +1,19 @@
+<% if(locals.errorMessage != null) {%>
+    <%= errorMessage  %>
+<% } %>
+<!-- 19:45 i followed exactly your steps but it keeps saying that errorMessage is undefined 
+
+never mind i fixed it, instead of doing res.render(`authors`, { errorMessage : `something went wrong`})
+
+
+declare the an object first containing them :  let locals = { errorMessage : `something went wrong` }
+
+
+then  res.render(`authors`, locals)
+
+
+then in errorMessage.ejs : <%= locals.errorMessage %> -->
+<!-- I noticed I got the error when I mistakenly put !== instead of != in the IF statement
+
+
+ -->
